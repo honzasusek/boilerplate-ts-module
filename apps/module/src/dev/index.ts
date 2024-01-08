@@ -3,7 +3,7 @@ import { type Props, type Data } from '@boilerplate-ts-webmodule/types'
 import { create } from '..'
 import json from './data.json'
 
-function init(container: Element) {
+const init = (container: Element) => {
   const props: Props = {
     divider: ' ',
   }

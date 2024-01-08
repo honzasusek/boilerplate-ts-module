@@ -1,6 +1,6 @@
 import { type Props, type Data } from '@boilerplate-ts-webmodule/types'
 
-function create(container: Element, props: Props, data: Data) {
+const create = (container: Element, props: Props, data: Data) => {
   const render = (propsMutation: Partial<Props> = {}, currentData?: Data) => {
     const currentProps = { ...props, ...propsMutation }
 
