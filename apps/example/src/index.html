@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="./module.js"></script>
+    <script type="text/javascript">
+      function init(container, data) {
+        const props = window.webmodule.defaultProps
+        const create = window.webmodule.create
+
+        const update = create(container, props, data)
+      }
+      window.addEventListener('load', function () {
+        fetch('./data.json').then(function (response) {
+          response.json().then(function (data) {
+            const nodes = document.querySelectorAll('.module')
+
+            nodes.forEach(function (element) {
+              if (!element.childNodes.length) {
+                init(element, data)
+              }
+            })
+          })
+        })
+      })
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>boilerplate-ts-webmodule</title>
+  </head>
+  <body>
+    <h1>boilerplate-ts-webmodule</h1>
+    <div class="module" />
+  </body>
+</html>

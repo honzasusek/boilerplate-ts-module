@@ -1,0 +1,29 @@
+{
+  "name": "@boilerplate-ts-webmodule/utils",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "typescript",
+    "babel",
+    "boilerplate"
+  ],
+  "browser": "dist/index.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=6.14.11"
+  },
+  "author": "honza@susek.cz",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc src/index.ts --declaration --allowJs --esModuleInterop --outDir dist"
+  },
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@boilerplate-ts-webmodule/types": "^1.0.0",
+    "lodash.merge": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202"
+  }
+}

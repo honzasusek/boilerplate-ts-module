@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "packages/utils/src/**/*",
+    "packages/types/src/**/*",
+    "apps/module/src/**/*",
+    "apps/example/src/**/*"
+  ],
+  "types": ["node"]
+}

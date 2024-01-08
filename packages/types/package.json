@@ -1,0 +1,17 @@
+{
+  "name": "@boilerplate-ts-webmodule/types",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=6.14.11"
+  },
+  "author": "honza@susek.cz",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc src/index.ts --declaration --allowJs --esModuleInterop --outDir dist"
+  },
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {}
+}
